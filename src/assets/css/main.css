@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;  /* hide bottom (horizontal) scroll ONLY */
+  overflow-y: auto;    /* allow vertical scroll */
+}
+/* 
+.app-content {
+  overflow-y: auto;  
+  padding-bottom: 60px;  
+}
+
+.app-footer {
+  background: #e4e7e8;
+  border-top: 1px solid #ddd;
+  height: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+} */

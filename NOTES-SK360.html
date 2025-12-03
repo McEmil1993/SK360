@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTES-SK360</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><hr>
+<h1 id="🟦-sk360-admin-—-react--vite">🟦 SK360 Admin — React + Vite</h1>
+<p>Simple installation guide for local development or running on another laptop.</p>
+<hr>
+<h1 id="✅-system-requirements">✅ <strong>System Requirements</strong></h1>
+<p>To avoid errors, <strong>all developers must use the same Node.js version:</strong></p>
+<h3 id="🟩-node.js-version-required">🟩 Node.js Version Required</h3>
+<pre><code>v22.13.1
+</code></pre>
+<p>⚠ Using a different Node version may cause:<br>
+– Vite not starting<br>
+– React plugin errors<br>
+– Build failures</p>
+<p>Download exact version here:<br>
+🔗 <a href="https://nodejs.org/en/download/prebuilt-installer">https://nodejs.org/en/download/prebuilt-installer</a><br>
+(Select <strong>Node 22.13.1</strong>)</p>
+<hr>
+<h1 id="📦-included-in-the-project">📦 <strong>Included in the Project</strong></h1>
+<p>Once Node.js v22.13.1 is installed, all packages will automatically install:</p>
+<p>✔ React (latest)<br>
+✔ React Router<br>
+✔ Vite<br>
+✔ Color Admin CSS &amp; JS<br>
+✔ Bootstrap<br>
+✔ Charts (ApexCharts / Chart.js)<br>
+✔ Ionicons / FontAwesome<br>
+✔ All dependencies from <code>package.json</code></p>
+<p>No additional setup needed.</p>
+<hr>
+<h1 id="🚀-how-to-run-on-any-laptop">🚀 How to Run on Any Laptop</h1>
+<h3 id="install-node.js-must-be-v22.13.1"><strong>1. Install Node.js (must be v22.13.1)</strong></h3>
+<p>Verify:</p>
+<pre class=" language-bash"><code class="prism  language-bash">node --version
+</code></pre>
+<hr>
+<h3 id="clone-or-download-the-project"><strong>2. Clone or download the project</strong></h3>
+<p><strong>Using Git:</strong></p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://github.com/McEmil1993/SK360.git
+</code></pre>
+<p>OR<br>
+Download ZIP → Extract.</p>
+<hr>
+<h3 id="open-the-folder"><strong>3. Open the folder</strong></h3>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">cd</span> sk360-admin
+</code></pre>
+<hr>
+<h3 id="install-dependencies"><strong>4. Install dependencies</strong></h3>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">npm</span> <span class="token function">install</span>
+</code></pre>
+<hr>
+<h3 id="start-local-development"><strong>5. Start local development</strong></h3>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">npm</span> run dev
+</code></pre>
+<p>Open in browser:</p>
+<pre><code>http://localhost:5173/
+</code></pre>
+<hr>
+<h1 id="📁-folder-structure">📁 Folder Structure</h1>
+<pre><code>src/
+ ├── pages/
+ │     ├── Dashboard.jsx
+ │     ├── UserManage.jsx
+ │     ├── Profile.jsx
+ │     └── Template.jsx   ← (Use this for creating new pages)
+ │
+ ├── components/
+ ├── layouts/
+ ├── services/
+ ├── routes/
+ ├── assets/
+ └── main.jsx
+</code></pre>
+<hr>
+<h1 id="➕-📌-creating-a-new-page-important">➕ <strong>📌 Creating a New Page (IMPORTANT)</strong></h1>
+<p>To keep your project clean and consistent, <strong>all new pages must follow the template file</strong>:</p>
+<h3 id="📍-template-location">📍 Template Location:</h3>
+<pre><code>src/pages/Template.jsx
+</code></pre>
+<h3 id="📝-steps-to-create-a-new-page">📝 Steps to Create a New Page</h3>
+<p>1️⃣ Copy the file:</p>
+<pre><code>Template.jsx → NewPage.jsx
+</code></pre>
+<p>2️⃣ Open NewPage.jsx and <strong>rename the component</strong>:</p>
+<pre class=" language-jsx"><code class="prism  language-jsx"><span class="token keyword">const</span> <span class="token function-variable function">Template</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token comment">// ⬇ CHANGE TO</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Reports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+</code></pre>
+<p>3️⃣ Export properly:</p>
+<pre class=" language-jsx"><code class="prism  language-jsx"><span class="token keyword">export</span> <span class="token keyword">default</span> Reports<span class="token punctuation">;</span>
+</code></pre>
+<p>4️⃣ Add your new page inside <code>routes.js</code> (private route):</p>
+<pre class=" language-jsx"><code class="prism  language-jsx"><span class="token punctuation">{</span>
+  path<span class="token punctuation">:</span> <span class="token string">"/reports"</span><span class="token punctuation">,</span>
+  element<span class="token punctuation">:</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>PrivateRoute</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Reports</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>PrivateRoute</span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>5️⃣ Add sidebar link (optional):</p>
+<pre class=" language-jsx"><code class="prism  language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>NavLink</span> <span class="token attr-name">to</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/reports<span class="token punctuation">"</span></span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>menu-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Reports<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>NavLink</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>✅ <strong>DONE — Page works automatically with Topbar, Sidebar, Footer, and Color Admin!</strong></p>
+<hr>
+<h1 id="🔧-build-for-production">🔧 Build for Production</h1>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">npm</span> run build
+</code></pre>
+<p>Output files will be generated in:</p>
+<pre><code>dist/
+</code></pre>
+<p>This folder is ready for deployment (hosting, Nginx, Apache, etc.)</p>
+<hr>
+<h1 id="📝-notes">📝 Notes</h1>
+<p>✔ Always use Node <strong>22.13.1</strong><br>
+✔ After pulling new updates, run:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">npm</span> <span class="token function">install</span>
+</code></pre>
+<p>✔ If Vite refuses to run, reset your environment:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">rm</span> -rf node_modules
+<span class="token function">npm</span> <span class="token function">install</span>
+</code></pre>
+<p>✔ If still broken, also delete Vite cache:</p>
+<pre><code>rm -rf node_modules .vite
+npm install
+</code></pre>
+<hr>
+</div>
+</body>
+
+</html>
