@@ -16,7 +16,11 @@ const Topbar = () => {
       {/* NAVBAR HEADER */}
       <div className="navbar-header">
         <a href="#" className="navbar-brand">
-          <span className="navbar-logo"><ion-icon name="cloud"></ion-icon></span>
+
+        <span className="navbar-logo">
+            <img src="/sk.png" alt="Logo" width="32" height="32" />
+          </span>
+
           <b className="me-1">SK360</b> 
         </a>
 

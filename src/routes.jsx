@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import UserManage from "./pages/UserManage";
 import Profile from "./pages/Profile";
+import BudgetPreparation from "./pages/BudgetPreparation";
+import Icons from "./pages/Icons";
 
 // AUTH CHECKER
 import { isAuthenticated } from "./services/auth";
@@ -44,6 +46,22 @@ export const privateRoutes = [
     element: (
       <PrivateRoute>
         <Profile />
+      </PrivateRoute>
+    ),
+ },
+  {
+    path: "/budget-preparation",
+    element: (
+      <PrivateRoute>
+        <BudgetPreparation />
+      </PrivateRoute>
+    ),
+ },
+  {
+    path: "/icons",
+    element: (
+      <PrivateRoute>
+        <Icons />
       </PrivateRoute>
     ),
   },

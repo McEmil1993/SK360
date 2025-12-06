@@ -1,0 +1,192 @@
+.bg-gradient-blue-sky {
+  background: linear-gradient(135deg, #028aff, #6cd4ff);
+}
+
+.bg-gradient-blue-deep {
+  background: linear-gradient(135deg, #0033cc, #0066ff);
+}
+
+.bg-gradient-blue-ocean {
+  background: linear-gradient(135deg, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.bg-gradient-blue-ice {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+.bg-gradient-blue-royal {
+  background: linear-gradient(135deg, #4169e1, #5a4fcf);
+}
+.bg-gradient-green-lime {
+  background: linear-gradient(135deg, #a8ff78, #78ffd6);
+}
+
+.bg-gradient-green-mint {
+  background: linear-gradient(135deg, #5efce8, #736efe);
+}
+
+.bg-gradient-green-forest {
+  background: linear-gradient(135deg, #5a9216, #a5d6a7);
+}
+
+.bg-gradient-green-apple {
+  background: linear-gradient(135deg, #76ff03, #00e676);
+}
+
+.bg-gradient-green-neon {
+  background: linear-gradient(135deg, #00ff87, #60efff);
+}
+.bg-gradient-red-crimson {
+  background: linear-gradient(135deg, #ff0033, #cc0000);
+}
+
+.bg-gradient-red-blood {
+  background: linear-gradient(135deg, #a80000, #f00000);
+}
+
+.bg-gradient-pink-bloom {
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+}
+
+.bg-gradient-pink-neon {
+  background: linear-gradient(135deg, #ff6fd8, #3813c2);
+}
+
+.bg-gradient-rose-hot {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+.bg-gradient-orange-fire {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+.bg-gradient-orange-coral {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+.bg-gradient-amber-deep {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.bg-gradient-copper-gold {
+  background: linear-gradient(135deg, #d1913c, #ffd194);
+}
+
+.bg-gradient-orange-mango {
+  background: linear-gradient(135deg, #ffe259, #ffa751);
+}
+.bg-gradient-purple-deep {
+  background: linear-gradient(135deg, #4b0082, #8a2be2);
+}
+
+.bg-gradient-purple-luxury {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+}
+
+.bg-gradient-purple-dusk {
+  background: linear-gradient(135deg, #b721ff, #21d4fd);
+}
+
+.bg-gradient-purple-space {
+  background: linear-gradient(135deg, #1e1a78, #9d50bb);
+}
+
+.bg-gradient-lavender-soft {
+  background: linear-gradient(135deg, #e3d7ff, #c7b5ff);
+}
+.bg-gradient-black-carbon {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+
+.bg-gradient-black-steel {
+  background: linear-gradient(135deg, #434343, #000000);
+}
+
+.bg-gradient-black-silver {
+  background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+}
+
+.bg-gradient-black-purple {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+.bg-gradient-night-sky {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+.bg-gradient-rainbow {
+  background: linear-gradient(135deg, #ff0000, #ff9900, #ffff00, #33cc33, #0066ff, #6600cc);
+}
+
+.bg-gradient-rainbow-soft {
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0, #fffcad, #c9ffbf, #b3fffd);
+}
+
+.bg-gradient-candy {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+}
+
+.bg-gradient-horizon {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+.bg-gradient-mystic {
+  background: linear-gradient(135deg, #7579ff, #b224ef);
+}
+/* Purple → Pink */
+.bg-gradient-purple-pink {
+  background: linear-gradient(135deg, #8e2de2, #ff6ec4);
+}
+
+/* Pink → Rose */
+.bg-gradient-pink-rose {
+  background: linear-gradient(135deg, #ff4d79, #ff7eb3);
+}
+
+/* Red → Orange */
+.bg-gradient-red-orange {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+/* Orange → Yellow */
+.bg-gradient-orange-yellow {
+  background: linear-gradient(135deg, #ff8a00, #ffe259);
+}
+
+/* Green → Teal */
+.bg-gradient-green-teal {
+  background: linear-gradient(135deg, #00b09b, #96c93d);
+}
+
+/* Lime → Emerald */
+.bg-gradient-lime-emerald {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+}
+
+/* Teal → Blue */
+.bg-gradient-teal-blue {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+/* Navy → Black */
+.bg-gradient-navy-black {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+/* Silver → Gray */
+.bg-gradient-silver-gray {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+/* Gold → Amber */
+.bg-gradient-gold-amber {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+/* Cool sky */
+.bg-gradient-sky {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Warm sunset */
+.bg-gradient-sunset {
+  background: linear-gradient(135deg, #f83600, #f9d423);
+}
